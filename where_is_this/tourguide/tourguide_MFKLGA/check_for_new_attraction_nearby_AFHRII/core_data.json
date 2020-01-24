@@ -1,0 +1,89 @@
+{
+    "__jsonqualname__": "rafcon.core.states.execution_state.ExecutionState", 
+    "description": null, 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.object"
+            }, 
+            "default_value": null, 
+            "name": "robot_poseStamped"
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.list"
+            }, 
+            "default_value": null, 
+            "name": "visited_attractions"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 3, 
+            "data_type": {
+                "__type__": "__builtin__.dict"
+            }, 
+            "default_value": null, 
+            "name": "attraction_waypoint_dict"
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 5, 
+            "data_type": {
+                "__type__": "__builtin__.float"
+            }, 
+            "default_value": 0.4, 
+            "name": "max_visiting_distance"
+        }
+    }, 
+    "name": "check_for_new_attraction_nearby", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "nothing_new", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "something_new", 
+            "outcome_id": 1
+        }
+    }, 
+    "output_data_ports": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": null, 
+            "name": "attraction_info"
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 4, 
+            "data_type": {
+                "__type__": "__builtin__.list"
+            }, 
+            "default_value": null, 
+            "name": "unvisited_attractions"
+        }
+    }, 
+    "state_id": "AFHRII"
+}

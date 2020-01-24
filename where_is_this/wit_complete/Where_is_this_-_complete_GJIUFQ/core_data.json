@@ -1,0 +1,198 @@
+{
+    "__jsonqualname__": "rafcon.core.states.hierarchy_state.HierarchyState", 
+    "data_flows": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 1, 
+            "from_key": 0, 
+            "from_state": "GJIUFQ", 
+            "to_key": 0, 
+            "to_state": "WHAVBH"
+        }, 
+        "5": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 5, 
+            "from_key": 0, 
+            "from_state": "FWYRBF", 
+            "to_key": 0, 
+            "to_state": "ZPQJHF"
+        }, 
+        "11": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 11, 
+            "from_key": 2, 
+            "from_state": "GJIUFQ", 
+            "to_key": 1, 
+            "to_state": "DQDYZP"
+        }, 
+        "12": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_flow.DataFlow", 
+            "data_flow_id": 12, 
+            "from_key": 3, 
+            "from_state": "GJIUFQ", 
+            "to_key": 0, 
+            "to_state": "DQDYZP"
+        }
+    }, 
+    "description": "Main state machien for where is this challenge!\n\nDescription of scoped variables:\n\nwpp_file: File path for the wpp\n\ntriedSoFar: How often have we tried the challenge so far\n\nmaxTrys: How often do we try the challenge\n\ninfo_wp: Waypoint of the info point\n", 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {}, 
+    "name": "Where is this - complete", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "success", 
+            "outcome_id": 0
+        }
+    }, 
+    "output_data_ports": {}, 
+    "scoped_variables": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.scope.ScopedVariable", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 0, 
+            "name": "info_wp"
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.scope.ScopedVariable", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.str"
+            }, 
+            "default_value": null, 
+            "name": "wpp_file"
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.scope.ScopedVariable", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 0, 
+            "name": "triedSoFar"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.scope.ScopedVariable", 
+            "data_port_id": 3, 
+            "data_type": {
+                "__type__": "__builtin__.int"
+            }, 
+            "default_value": 2, 
+            "name": "maxTrys"
+        }
+    }, 
+    "state_id": "GJIUFQ", 
+    "transitions": {
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": null, 
+            "from_state": null, 
+            "to_outcome": null, 
+            "to_state": "YRFGLC", 
+            "transition_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "YRFGLC", 
+            "to_outcome": null, 
+            "to_state": "AGWHZA", 
+            "transition_id": 2
+        }, 
+        "4": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "AGWHZA", 
+            "to_outcome": null, 
+            "to_state": "MOTUPE", 
+            "transition_id": 4
+        }, 
+        "14": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "MOTUPE", 
+            "to_outcome": null, 
+            "to_state": "EGHMKA", 
+            "transition_id": 14
+        }, 
+        "15": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "EGHMKA", 
+            "to_outcome": null, 
+            "to_state": "WHAVBH", 
+            "transition_id": 15
+        }, 
+        "16": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "WHAVBH", 
+            "to_outcome": null, 
+            "to_state": "JXTISJ", 
+            "transition_id": 16
+        }, 
+        "17": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "JXTISJ", 
+            "to_outcome": null, 
+            "to_state": "FWYRBF", 
+            "transition_id": 17
+        }, 
+        "23": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 1, 
+            "from_state": "DQDYZP", 
+            "to_outcome": null, 
+            "to_state": "SHKYIU", 
+            "transition_id": 23
+        }, 
+        "24": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "SHKYIU", 
+            "to_outcome": 0, 
+            "to_state": "GJIUFQ", 
+            "transition_id": 24
+        }, 
+        "25": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "DQDYZP", 
+            "to_outcome": null, 
+            "to_state": "WHAVBH", 
+            "transition_id": 25
+        }, 
+        "26": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "NBPIVR", 
+            "to_outcome": null, 
+            "to_state": "DQDYZP", 
+            "transition_id": 26
+        }, 
+        "37": {
+            "__jsonqualname__": "rafcon.core.state_elements.transition.Transition", 
+            "from_outcome": 0, 
+            "from_state": "FWYRBF", 
+            "to_outcome": null, 
+            "to_state": "ZPQJHF", 
+            "transition_id": 37
+        }
+    }
+}

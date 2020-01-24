@@ -1,0 +1,76 @@
+{
+    "__jsonqualname__": "rafcon.core.states.execution_state.ExecutionState", 
+    "description": "Check what do to either:\n- Drop garbage (if thrash in the hand)\n- Get garbage from back (if garbage in the back)\n- Finish", 
+    "income": {
+        "__jsonqualname__": "rafcon.core.state_elements.logical_port.Income"
+    }, 
+    "input_data_ports": {
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 0, 
+            "data_type": {
+                "__type__": "__builtin__.bool"
+            }, 
+            "default_value": null, 
+            "name": "thrashOnBack"
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.InputDataPort", 
+            "data_port_id": 1, 
+            "data_type": {
+                "__type__": "__builtin__.bool"
+            }, 
+            "default_value": null, 
+            "name": "thrashOnArm"
+        }
+    }, 
+    "name": "Check what to do", 
+    "outcomes": {
+        "-2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "preempted", 
+            "outcome_id": -2
+        }, 
+        "-1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "aborted", 
+            "outcome_id": -1
+        }, 
+        "0": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "dropThrash", 
+            "outcome_id": 0
+        }, 
+        "1": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "getThrashFromBack", 
+            "outcome_id": 1
+        }, 
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.logical_port.Outcome", 
+            "name": "Finish", 
+            "outcome_id": 2
+        }
+    }, 
+    "output_data_ports": {
+        "2": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 2, 
+            "data_type": {
+                "__type__": "__builtin__.bool"
+            }, 
+            "default_value": null, 
+            "name": "thrashOnArm"
+        }, 
+        "3": {
+            "__jsonqualname__": "rafcon.core.state_elements.data_port.OutputDataPort", 
+            "data_port_id": 3, 
+            "data_type": {
+                "__type__": "__builtin__.bool"
+            }, 
+            "default_value": null, 
+            "name": "thrashOnBack"
+        }
+    }, 
+    "state_id": "NIYVOA"
+}
