@@ -1,14 +1,15 @@
-# rtl_rafcon_sm
-
+rtl_rafcon_sm
+====
 state machines for robocup@home (and other competitions) challenges/tasks/tests over the years
 
-## Dev (show) branch
+Dev (show) branch
+====
 Here are all state machine which are not released and still under development!
 
-# Rafcon
-A little introduction to Rafcon (taken from the original rafcon github)
 RAFCON
 ======
+
+A little introduction to Rafcon (taken from the original rafcon github)
 
 .. figure:: https://raw.githubusercontent.com/DLR-RM/RAFCON/master/documents/assets/Screenshot_Drill_Skill.png
    :figwidth: 100%
@@ -47,18 +48,39 @@ Collaborative working
    :align: left
    :alt: Example on how to create a simple state machine
 
-## Rafcon/State Machine Preview Picutures
+Rafcon/State Machine Preview Picutures
+=====
 To give an Idea how the state machine looks like the following picutures represents different state machines, which we developed using rafcon.
 
-
-### Receptionist
+Receptionist
+=====
 An example of our current solution of Receptionist
-![Rafcon Receptionist](receptionist.png?raw=true "Receptionist")
 
-### Take out the Garbage
+.. figure:: https://github.com/rtlion/Rafcon-sm/blob/master/receptionist.png
+   :figwidth: 100%
+   :width: 800px
+   :align: left
+   :alt: Screenshot showing RAFCON with the receptionist challenge
+   :target: receptionist.png?raw=true
+
+Take out the Garbage
+=====
 An example of our current solution of Take out the garbage
-![Take out the Garbage](take_out_garbage.png?raw=true "Take out the Garbage")
 
-### Drop off thrash (from Take out the garbage)
+.. figure:: https://github.com/rtlion/Rafcon-sm/blob/master/take_out_garbage.png
+   :figwidth: 100%
+   :width: 800px
+   :align: left
+   :alt: Screenshot showing RAFCON with the take out the garbage challenge
+   :target: take_out_the_garbage.png?raw=true
+
+Drop off thrash (from Take out the garbage)
+=====
 An example of our current solution of drop off thrash, which gets used as a library in take out the garbage)
-![Drop off thrash](drop_off_thrash.png?raw=true "Drop off thrash")
+
+.. figure:: https://github.com/rtlion/Rafcon-sm/blob/master/drop_off_thrash.png
+   :figwidth: 100%
+   :width: 800px
+   :align: left
+   :alt: Screenshot showing RAFCON with a drop off thrash library
+   :target: drop_off_thrash.png?raw=true
